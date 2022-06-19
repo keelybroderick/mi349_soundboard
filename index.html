@@ -18,26 +18,33 @@
 <p>Keely Broderick's Sound Board</p>
 
 
-<audio id="myAudio">
+<audio id="myAudioCow">
     <source src="cow_toy.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
-  </audio>
+</audio>
+<audio id="myAudioGhost">
+    <source src="ghost.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+<audio id="myAudioOcean">
+    <source src="ocean.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
   
-  <p>Click the buttons to play or pause the audio.</p>
-  
-  <button onclick="playAudio()" type="button">Play Audio</button>
-  <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+  <button onclick="playAudio()" type="button">Cow</button>
+  <button onclick="playAudio()" type="button">Ghost</button>
+  <button onclick="playAudio()" type="button">Ocean</button>
   
   <script>
-  var x = document.getElementById("myAudio"); 
-  
+  var x = document.getElementById("myAudioCow"); 
+  var x = document.getElementById("myAudioGhost"); 
+  var x = document.getElementById("myAudioOcean"); 
+
+
   function playAudio() { 
     x.play(); 
   } 
   
-  function pauseAudio() { 
-    x.pause(); 
-  } 
   </script>
     <!-- 
     <audio src="cow_toy.mp3" id="cow"></audio>
