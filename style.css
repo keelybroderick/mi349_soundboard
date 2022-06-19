@@ -24,15 +24,3 @@ body{
     margin: 4px 2px;
     cursor: pointer;
 }
-
-h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-    font-size: 60px;
-    color: white;
-    margin: 0;
-}
