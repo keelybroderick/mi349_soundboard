@@ -20,12 +20,26 @@
             <code>audio</code> element.
     </audio>
     
-    
+<p>Execute a function when a user clicks on a button:</p>
+
+<button id="myBtn">Try it</button>
+
+<p id="demo">
+
+<script>
+const element = document.getElementById("myBtn");
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
     <!-- 
     <audio src="cow_toy.mp3" id="cow"></audio>
     <audio src="ghost.mp3" id="ghost"></audio>
     <audio src="ocean.mp3" id="ocean"></audio>
--->
+
     <script src="soundboard.js"></script>
+-->
 </body>
 </html>
