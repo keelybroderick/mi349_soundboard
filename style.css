@@ -1,7 +1,3 @@
-/*
-* {
-    box-sizing: border-box;
-}
 
 body{
     background-color: #30475e;
@@ -16,28 +12,27 @@ body{
     margin: 0;
 }
 
-.btn {
-    background-color: #f05454;
-    border-radius: 5px;
+.button {
+    background-color: #4c68af;
     border: none;
-    color: #e8e8e8;
-    margin: 1rem;
-    padding: 1.5rem 3rem;
-    font-size: 1.3rem;
-    font-family: inherit;
-    font-weight: bold;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
 }
 
-.btn:focus {
-    outline: none;
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    margin: 0;
 }
-
-.btn:active {
-    transform: scale(0.8);
-    transform: translateY(4px);
-    box-shadow: 0 0 10px #e8e8e8;
-}
-*/
-
