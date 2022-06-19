@@ -35,14 +35,23 @@
   <button onclick="playAudio()" type="button">Ghost</button>
   <button onclick="playAudio()" type="button">Ocean</button>
   
-  <script>
-  var x = document.getElementById("myAudioCow", "myAudioGhost", "myAudioOcean"); 
+ <script>
+  var x = document.getElementById("myAudioCow"); 
+  var y = document.getElementById("myAudioGhost"); 
+  var z = document.getElementById("myAudioOcean"); 
 
 
   function playAudio() { 
     x.play(); 
   } 
   
+  function playAudio() { 
+    y.play(); 
+  } 
+
+  function playAudio() { 
+    z.play(); 
+  } 
   </script>
     <!-- 
     <audio src="cow_toy.mp3" id="cow"></audio>
