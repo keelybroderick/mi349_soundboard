@@ -11,13 +11,16 @@ sounds.forEach((sound) => {
 
     btn.innerText = sound;
 
-    btn.addEventListener('click', ()=>{document.getElementById(sound)})
+    btn.addEventListener('click', () => {
+        document.getElementById(sound).play();
+    });
 
-    document.getElementById('buttons').appendChild(btn);
+    document.getElementById('buttons').appendChild
+    (btn);
 });
 
 function stopSongs() {
-    sounds.forEach(sound) => {
+    sounds.forEach((sound) => {
         const song = document.getElementById(sound);
         
         song.pause();
