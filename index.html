@@ -13,34 +13,29 @@
     <button class="primary" id="ghostsound">Ghost</button>
     
     
-    <audio
-        controls
-        src="cow_toy.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
+
     
 <p>Keely Broderick's Sound Board</p>
 
-<button onclick="playVid()" type="button">Cow</button>
 
-<audio id="cowsound"
-    controls
-    src="cow_toy.mp3">
-        Your browser does not support the
-        <code>audio</code> element.
-</audio>
+<audio id="myAudio">
+    <source src="cow_toy.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <p>Click the buttons to play </p>
+  
+  <button onclick="playAudio()" type="button">Cow</button>
+  
+  <script>
+  var x = document.getElementById("myAudio"); 
+  
+  function playAudio() { 
+    x.play(); 
+  } 
+  
 
-<script>
-
-
-var vid = document.getElementById('cowsound');
-
-function playVid() {
-    vid.play();
-}
-
-</script>
+  </script>
     <!-- 
     <audio src="cow_toy.mp3" id="cow"></audio>
     <audio src="ghost.mp3" id="ghost"></audio>
