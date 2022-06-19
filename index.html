@@ -22,24 +22,24 @@
     
 <p>Keely Broderick's Sound Board</p>
 
-<button id="myBtn">Cow</button>
+<button onclick="playVid()" type="button">Cow</button>
 
-<p id="demo">
+<audio id="cowsound"
+    controls
+    src="cow_toy.mp3">
+        Your browser does not support the
+        <code>audio</code> element.
+</audio>
 
 <script>
-const element = document.getElementById("myBtn");
-element.addEventListener("click", myFunction);
 
-function myFunction() {
-  document.getElementById("demo").innerHTML = 
-  <audio
-        controls
-        src="cow_toy.mp3">
-            Your browser does not support the
-            <code>audio</code> element.
-    </audio>
-  ;
+
+var vid = document.getElementById('cowsound');
+
+function playVid() {
+    vid.play();
 }
+
 </script>
     <!-- 
     <audio src="cow_toy.mp3" id="cow"></audio>
