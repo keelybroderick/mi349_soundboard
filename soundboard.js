@@ -28,8 +28,8 @@ function stopSongs() {
 }
 */
 
-var buttonElement = document.getElementById('cowsound')
+var buttonElement = document.getElementById('cowsound');
 
 buttonElement.addEventListener('click', function () {
-    console.log('I was clicked')
-})
+    console.log('I was clicked');
+});
